@@ -4,7 +4,7 @@ channels:
   - ryanvolz
   - defaults
   targets:
-  - [ryanvolz, log4cpp]
+  - [ryanvolz, main]
 travis:
   secure:
     BINSTAR_TOKEN: CwN5VQBAgkfy1S00vKWDm4Tlj/aOoQIojcc3PY1r9iQjzeqzAPrKqt63Gy18SC2eUx6D4fa7LkY9Nd7kkPnI/HFV9JPPWJcyrYf3KLUamaNDVvZx0i7Ghtud54Ih606cDV/4Mr4O2mMnUKtf8HTgaEjX36T+ZVcDWM6ce3dUHF0/lx3ewzkYRaweoQOb5cQFyyHfOH/teKW1MZLPOfC+VgGx8+YdSYxcBD13HOlHUaIc5bMdypmGflT4SYBSa8BFLgf1OMLOcNvX3lJEpXtUHk1piTZzReDJMI7+GcEFp/uboumk7fbUcs5DfhoYoXNJAA6RXVvUpBo2PAuj3Zne4UEH7EpDp2pJfTpF6QH2p6jPEUpL76eo+jVa0ShvMMwSUYZGWc0sxrTfytDUQ2O+7x9V407LLX2ZF0lovFAcbquQdS1iqp+Wmc9QipZAh4CVrOxNa9c3/iqv8CzDRcwPHq9U+ScBdZDDowjb2LzvEHLBfa1lVeXa7b2K+FV+q88HSdm9ru/vMLptcN884iipGMMafeeyOWxUrzduDW8eUSWjruZA80YgKclXPmZq+v3yy/HvqgkbqYbMJ06Qkm0TaOp6IZMLEXylaeLWlm3nMIbBFBeZREtLq3szmyoKLWquLA7nyu+k0cWDxZ52Z3jhDVal4/HK9g5QkZmZCp0bBWU=
