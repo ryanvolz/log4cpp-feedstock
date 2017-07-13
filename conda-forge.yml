@@ -1,1 +1,3 @@
-[]
+channels:
+  targets:
+    - [ryanvolz, log4cpp]
