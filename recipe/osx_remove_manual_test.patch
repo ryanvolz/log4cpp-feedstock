@@ -1,9 +1,9 @@
 --- tests/testDailyRollingFileAppender.cpp	2017-07-13 01:39:11.000000000 -0400
-+++ tests/testDailyRollingFileAppender.cpp.patched	2017-07-19 16:20:20.140559594 -0400
++++ tests/testDailyRollingFileAppender.cpp.patched	2017-07-19 17:16:31.232952561 -0400
 @@ -168,157 +168,6 @@
  	    return 0;
  }
-
+ 
 -//  Note: this test changes system time. Run it only manually
 -namespace OnlyManualTesting {
 -
@@ -51,7 +51,7 @@
 -    int checkThatNoMoreThanNLogFilesPresent(const std::string _fileName, int n);
 -
 -	int jumpToFuture(int seconds) {
--
+-		
 -#if defined(WIN32)
 -		SYSTEMTIME now;
 -		GetSystemTime(&now);
