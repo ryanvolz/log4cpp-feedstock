@@ -1,5 +1,5 @@
 {% set name = "log4cpp" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.3" %}
 
 package:
   name: {{ name }}
@@ -10,7 +10,7 @@ source:
   sha256: 35abf332630a6809c969276b1d60b90c81a95daf24c86cfd7866ffef72f9bed0
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   detect_binary_files_with_prefix: True
 
@@ -19,7 +19,14 @@ requirements:
     - toolchain
     - automake
     - libtool
-    - gcc  # [osx]
+
+test:
+  command:
+    {% set log4cpp_lib = "liblog4cpp" %}
+    - test -f $PREFIX/lib/{{ log4cpp_lib }}.a  # [unix]
+    - test -f $PREFIX/lib/{{ log4cpp_lib }}.so  # [linux]
+    - test -f $PREFIX/lib/{{ log4cpp_lib }}.dylib  # [osx]
+    - otool -L $PREFIX/lib/{{ log4cpp_lib }}.dylib  # [osx]
 
 about:
   home: http://log4cpp.sourceforge.net
