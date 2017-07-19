@@ -7,7 +7,7 @@ package:
 
 source:
   url: 'https://downloads.sourceforge.net/project/log4cpp/log4cpp-1.1.x (new)/log4cpp-1.1/{{ name }}-{{ version }}.tar.gz'
-  sha256: 35abf332630a6809c969276b1d60b90c81a95daf24c86cfd7866ffef72f9bed0
+  sha256: 2cbbea55a5d6895c9f0116a9a9ce3afb86df383cd05c9d6c1a4238e5e5c8f51d
 
 build:
   number: 0
