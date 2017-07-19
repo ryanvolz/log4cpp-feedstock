@@ -21,7 +21,7 @@ requirements:
     - libtool
 
 test:
-  command:
+  commands:
     {% set log4cpp_lib = "liblog4cpp" %}
     - test -f $PREFIX/lib/{{ log4cpp_lib }}.a  # [unix]
     - test -f $PREFIX/lib/{{ log4cpp_lib }}.so  # [linux]
