@@ -13,22 +13,32 @@ source:
 
 build:
   number: 0
-  skip: true  # [win]
+  skip: True  # [win and py35]
   detect_binary_files_with_prefix: True
+  features:
+    - vc14  # [win]
 
 requirements:
   build:
+    - automake  # [unix]
+    - cmake  # [win]
+    - libtool  # [unix]
+    - python >=3.5  # [win]
     - toolchain
-    - automake
-    - libtool
+    - vc 14  # [win
+
+  run:
+    - vc 14  # [win]
 
 test:
   commands:
-    {% set log4cpp_lib = "liblog4cpp" %}
-    - test -f $PREFIX/lib/{{ log4cpp_lib }}.a  # [unix]
-    - test -f $PREFIX/lib/{{ log4cpp_lib }}.so  # [linux]
-    - test -f $PREFIX/lib/{{ log4cpp_lib }}.dylib  # [osx]
-    - otool -L $PREFIX/lib/{{ log4cpp_lib }}.dylib  # [osx]
+    - test -f $PREFIX/include/log4cpp/Category.hh  # [unix]
+    - test -f $PREFIX/lib/liblog4cpp.a  # [unix]
+    - test -f $PREFIX/lib/liblog4cpp${SHLIB_EXT}  # [unix]
+    - if not exist %PREFIX%\\Library\\include\\log4cpp\\Category.hh exit 1  # [win]
+    - if not exist %PREFIX%\\Library\\lib\\log4cpp.lib exit 1  # [win]
+    - conda inspect linkages -p $PREFIX libusb  # [not win]
+    - conda inspect objects -p $PREFIX libusb  # [osx]
 
 about:
   home: http://log4cpp.sourceforge.net
