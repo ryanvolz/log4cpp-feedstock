@@ -25,7 +25,7 @@ requirements:
     - libtool  # [unix]
     - python >=3.5  # [win]
     - toolchain
-    - vc 14  # [win
+    - vc 14  # [win]
 
   run:
     - vc 14  # [win]
