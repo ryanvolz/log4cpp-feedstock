@@ -18,14 +18,16 @@ reasonable.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/ryanvolz/log4cpp-feedstock.svg?style=shield)](https://circleci.com/gh/ryanvolz/log4cpp-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/ryanvolz/log4cpp-feedstock.svg?branch=master)](https://travis-ci.org/ryanvolz/log4cpp-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/ryanvolz/log4cpp-feedstock?svg=True)](https://ci.appveyor.com/project/ryanvolz/log4cpp-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/ryanvolz/log4cpp-feedstock/master.svg?label=Linux)](https://circleci.com/gh/ryanvolz/log4cpp-feedstock)
+[![OSX](https://img.shields.io/travis/ryanvolz/log4cpp-feedstock/master.svg?label=macOS)](https://travis-ci.org/ryanvolz/log4cpp-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/ryanvolz/log4cpp-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/ryanvolz/log4cpp-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/ryanvolz/log4cpp/badges/version.svg)](https://anaconda.org/ryanvolz/log4cpp)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/ryanvolz/log4cpp/badges/downloads.svg)](https://anaconda.org/ryanvolz/log4cpp)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-log4cpp-green.svg)](https://anaconda.org/ryanvolz/log4cpp) | [![Conda Downloads](https://img.shields.io/conda/dn/ryanvolz/log4cpp.svg)](https://anaconda.org/ryanvolz/log4cpp) | [![Conda Version](https://img.shields.io/conda/vn/ryanvolz/log4cpp.svg)](https://anaconda.org/ryanvolz/log4cpp) | [![Conda Platforms](https://img.shields.io/conda/pn/ryanvolz/log4cpp.svg)](https://anaconda.org/ryanvolz/log4cpp) |
 
 Installing log4cpp
 ==================

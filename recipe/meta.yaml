@@ -12,23 +12,17 @@ source:
     - osx_remove_manual_test.patch  # [osx]
 
 build:
-  number: 0
-  skip: True  # [win and py35]
-  detect_binary_files_with_prefix: True
-  features:
-    - vc14  # [win]
+  number: 1
+  run_exports:
+    - {{ pin_subpackage('log4cpp') }}  # [not win] only static library on windows
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - automake  # [unix]
     - cmake  # [win]
     - libtool  # [unix]
-    - python >=3.5  # [win]
-    - toolchain
-    - vc 14  # [win]
-
-  run:
-    - vc 14  # [win]
 
 test:
   commands:
